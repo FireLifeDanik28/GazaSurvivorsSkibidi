@@ -15,7 +15,7 @@ public class EnemySpawner : MonoBehaviour
         {
             spawnPoints.Add(child.position);
         }
-        InvokeRepeating("Spawn", 0, 0.2f);
+        InvokeRepeating("Spawn", 0, 1f);
     }
 
     // Update is called once per frame

@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         {
             gun.transform.LookAt(enemies[0].transform);
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.transform.position, gun.transform.rotation);
-            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * 10000);
+            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * 1000);
             //Destroy(enemies[0]);
             Debug.Log("POW!");
         }
